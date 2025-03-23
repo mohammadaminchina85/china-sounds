@@ -1,17 +1,68 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="fa">
 <head>
-<meta charset="utf-8">
-<title>وبلاگ ایران زمین</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وبلاگ موسیقی ایران زمین</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .music-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .track {
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+        .track img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .track h3 {
+            margin: 10px 0;
+        }
+        .albums {
+            margin-top: 40px;
+        }
+    </style>
 </head>
-
 <body>
-<audio controls>
-    <source src="01._hans_zimmer_-_time_inception.mp3" type="audio/mpeg">
-    مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
-</audio>
-
-
-
+    <h1>🎵 وبلاگ موسیقی ایران زمین 🎵</h1>
+    <div class="music-container">
+        <div class="track">
+            <img src="cover1.jpg" alt="Time - Hans Zimmer">
+            <h3>Time - Hans Zimmer</h3>
+            <audio controls>
+                <source src="01._hans_zimmer_-_time_inception.mp3" type="audio/mpeg">
+                مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
+            </audio>
+        </div>
+        <div class="track">
+            <img src="cover2.jpg" alt="Another Song">
+            <h3>Another Song</h3>
+            <audio controls>
+                <source src="another_song.mp3" type="audio/mpeg">
+                مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
+            </audio>
+        </div>
+    </div>
+    
+    <div class="albums">
+        <h2>🎼 آلبوم‌ها 🎼</h2>
+        <p>در این بخش آلبوم‌های مختلف نمایش داده خواهند شد.</p>
+    </div>
 </body>
 </html>
