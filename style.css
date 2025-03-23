@@ -1,0 +1,95 @@
+/* استایل‌های عمومی */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+h3 {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/* استایل برای منو */
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* استایل برای نمایش آهنگ‌ها */
+.song-container {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 80px; /* فاصله از منو */
+}
+
+.song-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+audio {
+    margin-top: 10px;
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* استایل برای صفحه آلبوم‌ها */
+.albums-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px; /* فاصله از منو */
+}
+
+.album {
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.album img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.album:hover {
+    transform: scale(1.05);
+}
+
+.album h3 {
+    margin-top: 10px;
+}
