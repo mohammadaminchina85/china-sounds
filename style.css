@@ -112,3 +112,73 @@ audio {
     width: 100%;
     max-width: 400px;
 }
+
+/* استایل برای موبایل */
+@media (max-width: 768px) {
+    /* منو */
+    .menu a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* صفحه آهنگ‌ها */
+    .song-container {
+        margin-top: 60px;
+    }
+
+    /* تصاویر آهنگ‌ها */
+    .song-img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* صفحه آلبوم‌ها */
+    .albums-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .album img {
+        max-width: 100%;
+    }
+
+    .album h3 {
+        font-size: 1.1em;
+    }
+
+    /* لیست آهنگ‌ها */
+    .songs audio {
+        max-width: 100%;
+    }
+}
+
+/* استایل برای تبلت‌ها */
+@media (max-width: 480px) {
+    .menu a {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    /* صفحه آهنگ‌ها */
+    .song-container {
+        margin-top: 40px;
+    }
+
+    .song-img {
+        max-width: 200px;
+    }
+
+    /* صفحه آلبوم‌ها */
+    .albums-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .album img {
+        max-width: 100%;
+    }
+
+    .album h3 {
+        font-size: 1em;
+    }
+}
