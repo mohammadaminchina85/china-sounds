@@ -7,7 +7,7 @@ body {
     color: white;
 }
 
-h3 {
+h3, h4 {
     color: #fff;
     font-size: 1.2em;
 }
@@ -92,4 +92,23 @@ audio {
 
 .album h3 {
     margin-top: 10px;
+}
+
+/* استایل برای لیست آهنگ‌ها */
+.songs ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.songs li {
+    margin-bottom: 10px;
+}
+
+.songs audio {
+    margin-top: 5px;
+    background-color: #1f1f1f;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
 }
