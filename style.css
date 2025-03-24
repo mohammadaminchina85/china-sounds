@@ -1,9 +1,9 @@
-/* 🎨 بهینه‌سازی مدرن با افکت‌های نئون و انیمیشن */
+/* 🎨 بهینه‌سازی مدرن با حفظ تم رنگی اصلی */
 :root {
-    --primary-color: #4332BD;
-    --secondary-color: #E96742;
-    --background-color: #EBEAED;
-    --text-color: #1E90FF;
+    --primary-color: #4332BD; /* بنفش پررنگ */
+    --secondary-color: #E96742; /* نارنجی زنده */
+    --background-color: #EBEAED; /* پس‌زمینه روشن */
+    --text-color: #FFFFFF;
     --glass-bg: rgba(255, 255, 255, 0.15);
     --glass-border: rgba(255, 255, 255, 0.3);
     --hover-color: #FF9800;
@@ -20,7 +20,7 @@ body {
     color: var(--text-color);
 }
 
-/* 🎵 هدر با افکت پارالاکس */
+/* 🎵 هدر */
 .header {
     background: var(--primary-color);
     color: var(--text-color);
@@ -28,17 +28,9 @@ body {
     font-size: 24px;
     border-bottom: 3px solid var(--secondary-color);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 10;
-    transform: translateY(0);
-    transition: transform 0.3s ease-in-out;
 }
 
-.header:hover {
-    transform: translateY(-5px);
-}
-
-/* 🍔 منو با افکت نئون */
+/* 🍔 منو */
 .menu {
     background: var(--secondary-color);
     padding: 15px;
@@ -59,17 +51,15 @@ body {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(8px);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .menu a:hover {
     background: var(--hover-color);
     color: #fff;
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 152, 0, 0.6);
 }
 
-/* 🎼 آلبوم‌ها با انیمیشن */
+/* 🎼 آلبوم‌ها */
 .albums-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -85,20 +75,6 @@ body {
     backdrop-filter: blur(15px);
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s ease-out forwards;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .album:hover {
@@ -112,7 +88,7 @@ body {
     border-radius: 8px;
 }
 
-/* 🎵 پلیر آهنگ با افکت شناور */
+/* 🎵 پلیر آهنگ */
 .song-container {
     background: var(--glass-bg);
     padding: 15px;
@@ -122,12 +98,6 @@ body {
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.song-container:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 audio {
