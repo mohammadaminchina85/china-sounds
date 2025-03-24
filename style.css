@@ -7,6 +7,7 @@
     --glass-bg: rgba(255, 255, 255, 0.15);
     --glass-border: rgba(255, 255, 255, 0.3);
     --hover-color: #FF9800;
+    --song-text-color: #2196F3; /* 🔵 آبی مخصوص متن آهنگ */
 }
 
 body {
@@ -98,6 +99,14 @@ body {
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* تغییر رنگ متن نام آهنگ‌ها به آبی */
+.song-container p {
+    color: var(--song-text-color); /* 🔵 استفاده از رنگ آبی */
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* برای خوانایی بهتر */
 }
 
 audio {
