@@ -1,47 +1,175 @@
-<!doctype html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آلبوم‌ها</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* 🎨 بهینه‌سازی مدرن با افکت‌های نئون و انیمیشن */
+:root {
+    --primary-color: #4332BD;
+    --secondary-color: #E96742;
+    --background-color: #EBEAED;
+    --text-color: #333333;
+    --song-title-color: #1E90FF; /* 🔵 تغییر رنگ نام آهنگ به آبی */
+    --glass-bg: rgba(255, 255, 255, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --hover-color: #FF9800;
+}
 
-    <!-- هدر -->
-    <header class="header">
-        <h1>آلبوم‌های موسیقی</h1>
-    </header>
+/* استایل کلی */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    color: var(--text-color);
+}
 
-    <!-- منو -->
-    <div class="menu">
-        <a href="index.html">خانه</a>
-        <a href="albums.html">آلبوم‌ها</a>
-        <a href="https://about-music-rwr08tt.gamma.site/">درباره ما</a>
-        <a href="https://tamas-ba-ma-qhl2fje.gamma.site/">تماس با ما</a>
-        <a href="https://t.me/+dopOZB7Z9stjYThk">کانال تلگرامی ما</a>
-    </div>
+/* هدر */
+.header {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    border-bottom: 3px solid var(--secondary-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
 
-    <!-- بخش آلبوم‌ها -->
-    <div class="albums-container">
-        <div class="album">
-            <a href="album1.html">
-                <img src="dUNE2.jpeg" alt="آلبوم 1">
-                <h3>البوم تل ماسه بخش دوم</h3>
-            </a>
-        </div>
-        <div class="album">
-            <a href="#">
-                <img src="album2.jpeg" alt="آلبوم 2">
-                <h3>البوم موجود نیست</h3>
-            </a>
-        </div>
-    </div>
+.header:hover {
+    transform: translateY(-5px);
+}
 
-    <!-- فوتر -->
-    <footer class="footer">
-        <p>تمامی حقوق محفوظ است &copy; 2025</p>
-    </footer>
+/* منو */
+.menu {
+    background: var(--secondary-color);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 2px solid var(--primary-color);
+}
 
-</body>
-</html>
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.menu a:hover {
+    background: var(--hover-color);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 152, 0, 0.6);
+}
+
+/* آلبوم‌ها */
+.albums-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.album {
+    background: var(--glass-bg);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    opacity: 1; /* تغییر opacity از 0 به 1 */
+    transform: translateY(0); /* تغییر transform */
+    animation: fadeInUp 0.5s ease-out forwards;
+    color: var(--text-color);
+    z-index: 10; /* اطمینان از نمایش آلبوم‌ها در جلوی سایر المان‌ها */
+}
+
+.album:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.album img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* پلیر آهنگ */
+.song-container {
+    background: var(--glass-bg);
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 10px auto;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    color: var(--text-color);
+}
+
+.song-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.song-title {
+    color: var(--song-title-color); /* 🔵 اعمال رنگ آبی برای نام آهنگ */
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+audio {
+    width: 100%;
+    height: 55px;
+}
+
+/* فوتر */
+.footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px;
+    border-top: 3px solid var(--secondary-color);
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* مدیا کوئری برای موبایل */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        width: 90%;
+        text-align: center;
+    }
+
+    .albums-container {
+        grid-template-columns: 1fr;
+    }
+
+    .song-container {
+        max-width: 90%;
+    }
+
+    audio {
+        height: 60px;
+    }
+}
