@@ -1,7 +1,9 @@
 /* 🎨 بهینه‌سازی مدرن با حفظ تم رنگی اصلی */
 :root {
     --primary-color: #4332BD; /* بنفش پررنگ */
+    --primary-dark: #2c1a8a; /* نسخه تیره‌تر بنفش */
     --secondary-color: #E96742; /* نارنجی زنده */
+    --secondary-light: #ff825f; /* نسخه روشن‌تر نارنجی */
     --background-color: #EBEAED; /* پس‌زمینه روشن */
     --text-color: #FFFFFF;
     --glass-bg: rgba(255, 255, 255, 0.15);
@@ -48,7 +50,7 @@ body {
     padding: 12px 20px;
     font-size: 18px;
     border-radius: 8px;
-    transition: all 0.3s ease-in-out;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(8px);
@@ -57,7 +59,8 @@ body {
 .menu a:hover {
     background: var(--hover-color);
     color: #fff;
-    transform: scale(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 15px rgba(255, 152, 0, 0.5);
 }
 
 /* 🎼 آلبوم‌ها */
@@ -74,13 +77,13 @@ body {
     border-radius: 12px;
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(15px);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .album:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .album img {
@@ -99,19 +102,24 @@ body {
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
 }
 
-/* تغییر رنگ متن نام آهنگ‌ها به آبی */
 .song-container p {
-    color: var(--song-text-color); /* 🔵 استفاده از رنگ آبی */
+    color: var(--song-text-color);
     font-size: 18px;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* برای خوانایی بهتر */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 8px;
 }
 
 audio {
     width: 100%;
     height: 55px;
+    border-radius: 10px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
 }
 
 /* 👣 فوتر */
@@ -124,30 +132,29 @@ audio {
 }
 
 /* 📌 مدیا کوئری برای موبایل */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
+@media screen and (max-width: 600px) {
     .menu {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
     .menu a {
-        width: 90%;
+        width: 80%;
         text-align: center;
+        padding: 10px;
     }
 
     .albums-container {
         grid-template-columns: 1fr;
+        padding: 20px;
     }
 
     .song-container {
-        max-width: 90%;
+        max-width: 95%;
     }
 
     audio {
-        height: 60px;
+        height: 50px;
     }
 }
