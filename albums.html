@@ -1,104 +1,47 @@
-/* استایل کلی */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #EBEAED;
-    text-align: center;
-    width: 100%;
-    overflow-x: hidden; /* جلوگیری از اسکرول افقی */
-}
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>آلبوم‌ها</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* استایل هدر */
-.header {
-    background-color: #4332BD;
-    color: white;
-    padding: 15px;
-    font-size: 22px;
-}
+    <!-- هدر -->
+    <header class="header">
+        <h1>آلبوم‌های موسیقی</h1>
+    </header>
 
-/* منو */
-.menu {
-    background-color: #E96742;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+    <!-- منو -->
+    <div class="menu">
+        <a href="index.html">خانه</a>
+        <a href="albums.html">آلبوم‌ها</a>
+        <a href="https://about-music-rwr08tt.gamma.site/">درباره ما</a>
+        <a href="https://tamas-ba-ma-qhl2fje.gamma.site/">تماس با ما</a>
+        <a href="https://t.me/+dopOZB7Z9stjYThk">کانال تلگرامی ما</a>
+    </div>
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 18px;
-}
+    <!-- بخش آلبوم‌ها -->
+    <div class="albums-container">
+        <div class="album">
+            <a href="album1.html">
+                <img src="dUNE2.jpeg" alt="آلبوم 1">
+                <h3>تل ماسه بخش دوم</h3>
+            </a>
+        </div>
+        <div class="album">
+            <a href="album2.html">
+                <img src="album2.jpeg" alt="آلبوم 2">
+                <h3>البوم موجود نیست</h3>
+            </a>
+        </div>
+    </div>
 
-/* آلبوم‌ها */
-.albums-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    padding: 20px;
-}
+    <!-- فوتر -->
+    <footer class="footer">
+        <p>تمامی حقوق محفوظ است &copy; 2025</p>
+    </footer>
 
-.album {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.album img {
-    width: 100%;
-    max-width: 300px;
-}
-
-/* آهنگ‌ها */
-.song-container {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 10px auto;
-    max-width: 400px;
-}
-
-/* بزرگ‌تر کردن پلیر آهنگ */
-audio {
-    width: 100%;
-    height: 50px; /* بزرگ‌تر کردن کنترل‌های پخش */
-}
-
-/* فوتر */
-.footer {
-    background-color: #4332BD;
-    color: white;
-    padding: 10px;
-}
-
-/* 📌 مدیا کوئری برای موبایل */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    .menu {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .menu a {
-        padding: 8px;
-        font-size: 16px;
-    }
-
-    .albums-container {
-        grid-template-columns: 1fr;
-    }
-
-    .song-container {
-        max-width: 90%;
-    }
-
-    audio {
-        height: 60px; /* افزایش سایز دکمه‌های پخش */
-    }
-}
+</body>
+</html>
