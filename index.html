@@ -6,29 +6,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- منو -->
-    <div class="menu">
-        <a href="index.html">خانه</a>
-        <a href="albums.html">آلبوم‌ها</a>
-    </div>
+
+    <!-- هدر -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="لوگوی وبسایت">
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">خانه</a>
+            <a href="albums.html">آلبوم‌ها</a>
+            <a href="contact.html">تماس با ما</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="جستجو کنید...">
+            <button>جستجو</button>
+        </div>
+    </header>
 
     <!-- بخش آهنگ‌ها -->
-    <div class="song-container">
-        <img src="inc.jpeg" alt="تصویر آهنگ 1" class="song-img">
-        <h3>HANS_ZIMMER_TIME</h3>
-        <audio controls>
-            <source src="01._hans_zimmer_-_time_inception.mp3" type="audio/mpeg">
-            مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
-        </audio>
+    <div class="content">
+        <div class="song-container">
+            <img src="inc.jpeg" alt="تصویر آهنگ 1" class="song-img">
+            <h3>HANS_ZIMMER_TIME</h3>
+            <audio controls>
+                <source src="01._hans_zimmer_-_time_inception.mp3" type="audio/mpeg">
+                مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
+            </audio>
+        </div>
+
+        <div class="song-container">
+            <img src="taboo.jpeg" alt="تصویر آهنگ 2" class="song-img">
+            <h3>TABOO</h3>
+            <audio controls>
+                <source src="01._openings.mp3" type="audio/mpeg">
+                مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
+            </audio>
+        </div>
     </div>
 
-    <div class="song-container">
-        <img src="taboo.jpeg" alt="تصویر آهنگ 2" class="song-img">
-        <h3>TABOO</h3>
-        <audio controls>
-            <source src="01._openings.mp3" type="audio/mpeg">
-            مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
-        </audio>
-    </div>
+    <!-- فوتر -->
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">درباره ما</a>
+            <a href="privacy.html">حریم خصوصی</a>
+            <a href="terms.html">شرایط استفاده</a>
+        </div>
+        <div class="footer-socials">
+            <a href="#">فیسبوک</a>
+            <a href="#">اینستاگرام</a>
+            <a href="#">توییتر</a>
+        </div>
+        <p>&copy; 2025 وبلاگ ایران زمین. تمام حقوق محفوظ است.</p>
+    </footer>
+
 </body>
 </html>
