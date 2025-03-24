@@ -107,7 +107,7 @@ body {
 }
 
 .song-container h3 {
-    color: green;
+    color: var(--song-text-color);
     font-size: 18px;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
