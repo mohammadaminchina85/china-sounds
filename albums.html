@@ -6,37 +6,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- منو -->
-    <div class="menu">
-        <a href="index.html">خانه</a>
-        <a href="albums.html">آلبوم‌ها</a>
-    </div>
+
+    <!-- هدر -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="لوگوی وبسایت">
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">خانه</a>
+            <a href="albums.html">آلبوم‌ها</a>
+            <a href="contact.html">تماس با ما</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="جستجو کنید...">
+            <button>جستجو</button>
+        </div>
+    </header>
 
     <!-- بخش آلبوم‌ها -->
-    <div class="albums-container">
-        <div class="album">
-            <img src="dUNE2.jpeg" alt="آلبوم 1">
-            <h3>تل ماسه بخش دوم</h3>
-            <div class="songs">
-                <h4>آهنگ‌ها:</h4>
-                <ul>
-                    <li>
-                        <audio controls>
-                            <source src="DUNE_Official_Soundtrack_Leaving_Caladan_Hans_Zimmer_Wa_T0P6YDveLsM.mp3" type="audio/mpeg">
-                            مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
-                        </audio>
-                        <p>آهنگ 1</p>
-                    </li>
-                    <li>
-                        <audio controls>
-                            <source src="album1_song2.mp3" type="audio/mpeg">
-                            مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
-                        </audio>
-                        <p>اهنگ موجود نیست</p>
-                    </li>
-                </ul>
+    <div class="content">
+        <div class="albums-container">
+            <div class="album">
+                <img src="dUNE2.jpeg" alt="آلبوم 1">
+                <h3>تل ماسه بخش دوم</h3>
+                <div class="songs">
+                    <h4>آهنگ‌ها:</h4>
+                    <ul>
+                        <li>
+                            <audio controls>
+                                <source src="DUNE_Official_Soundtrack_Leaving_Caladan_Hans_Zimmer_Wa_T0P6YDveLsM.mp3" type="audio/mpeg">
+                                مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
+                            </audio>
+                            <p>آهنگ 1</p>
+                        </li>
+                        <li>
+                            <audio controls>
+                                <source src="album1_song2.mp3" type="audio/mpeg">
+                                مرورگر شما از پخش این فایل صوتی پشتیبانی نمی‌کند.
+                            </audio>
+                            <p>اهنگ موجود نیست</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- فوتر -->
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">درباره ما</a>
+            <a href="privacy.html">حریم خصوصی</a>
+            <a href="terms.html">شرایط استفاده</a>
+        </div>
+        <div class="footer-socials">
+            <a href="#">فیسبوک</a>
+            <a href="#">اینستاگرام</a>
+            <a href="#">توییتر</a>
+        </div>
+        <p>&copy; 2025 وبلاگ ایران زمین. تمام حقوق محفوظ است.</p>
+    </footer>
+
 </body>
 </html>
