@@ -3,7 +3,8 @@
     --primary-color: #4332BD;
     --secondary-color: #E96742;
     --background-color: #EBEAED;
-    --text-color: #333333; /* تغییر رنگ متن برای خوانایی بهتر */
+    --text-color: #333333;
+    --song-title-color: #1E90FF; /* 🔵 تغییر رنگ نام آهنگ به آبی */
     --glass-bg: rgba(255, 255, 255, 0.15);
     --glass-border: rgba(255, 255, 255, 0.3);
     --hover-color: #FF9800;
@@ -88,7 +89,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.5s ease-out forwards;
-    color: var(--text-color); /* اصلاح رنگ متن برای خوانایی */
+    color: var(--text-color);
 }
 
 .album:hover {
@@ -113,12 +114,19 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    color: var(--text-color); /* اصلاح رنگ متن برای خوانایی */
+    color: var(--text-color);
 }
 
 .song-container:hover {
     transform: scale(1.03);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.song-title {
+    color: var(--song-title-color); /* 🔵 اعمال رنگ آبی برای نام آهنگ */
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
 }
 
 audio {
