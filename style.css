@@ -106,7 +106,7 @@ body {
     position: relative;
 }
 
-.song-container p {
+.song-container h3 {
     color: green;
     font-size: 18px;
     font-weight: bold;
